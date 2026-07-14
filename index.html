@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bubble Pop Reaction Game</title>
+  <link rel="stylesheet" href="new.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🫧 Bubble Pop!</h1>
+      <div class="controls">
+        <select id="difficulty">
+          <option value="easy">Easy 🟢</option>
+          <option value="medium">Medium 🟠</option>
+          <option value="hard">Hard 🔴</option>
+        </select>
+        <button id="sound-toggle">🔊</button>
+        <button id="start-btn">Start Game</button>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div>Score: <strong id="score">0</strong></div>
+      <div>Misses: <strong id="misses">0</strong></div>
+      <div>Best: <strong id="highscore">0</strong></div>
+      <div>Reaction: <strong id="reaction">0.00s</strong></div>
+    </div>
+
+    <div id="game-area"></div>
+
+    <footer>
+      <p>Pop the bubbles before they disappear!</p>
+    </footer>
+  </div>
+
+  <audio id="pop-sound" src="pop.mp3" preload="auto"></audio>
+  <script src="new.js"></script>
+</body>
+</html>
